@@ -5,16 +5,22 @@ author: InstanceLabs
 permissions:
   plugindeact.deactivate:
     description: Gives access to deactivate a plugin.
-    permission-message: §4You don't have permission.
   plugindeact.activate:
     description: Gives access to activate a plugin.
-    permission-message: §4You don't have permission.
 commands:
    deactivate:
-      description: Deactivate a plugin.
-      permission: plugindeact.deactivate
+      description: Deactivate a plugin
       usage: /deactivate [name]
+      permission: plugindeact.deactivate
    deactivateplugin:
-      description: Remove a plugin.
-      permission: plugindeact.remove
+      description: Deactivate a plugin
       usage: /deactivateplugin [name]
+      permission: plugindeact.deactivate
+   dp:
+      description: Deactivate a plugin
+      usage: /dp [name]
+      permission: plugindeact.deactivate
+   activate:
+      description: Activate a plugin
+      usage: /activate [name]
+      permission: plugindeact.activate
