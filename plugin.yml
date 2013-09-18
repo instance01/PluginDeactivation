@@ -1,0 +1,20 @@
+name: IngamePluginDeactivation
+main: com.comze_instancelabs.ingameplugindeactivation.Main
+version: 1.0
+author: InstanceLabs
+permissions:
+  plugindeact.deactivate:
+    description: Gives access to deactivate a plugin.
+    permission-message: §4You don't have permission.
+  plugindeact.activate:
+    description: Gives access to activate a plugin.
+    permission-message: §4You don't have permission.
+commands:
+   deactivate:
+      description: Deactivate a plugin.
+      permission: plugindeact.deactivate
+      usage: /deactivate [name]
+   deactivateplugin:
+      description: Remove a plugin.
+      permission: plugindeact.remove
+      usage: /deactivateplugin [name]
